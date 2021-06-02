@@ -7,7 +7,7 @@ const MovieDetail = (props) => {
   console.log(props.location.state);
   const [loading, setLoading] = useState(true);
   const [movie, setMovie] = useState([]);
-  const MOVIE_API_URL = `http://www.omdbapi.com/?apikey=b9bd48a6&i=${props.location.state.id}`;
+  const MOVIE_API_URL = `https://www.omdbapi.com/?apikey=b9bd48a6&i=${props.location.state.id}`;
   const poster =
     movie.Poster === "N/A" ? DEFAULT_PLACEHOLDER_IMAGE : movie.Poster;
 
